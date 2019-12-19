@@ -37,3 +37,11 @@ if(_x_input != 0 || _y_input != 0){
 		}
 	}
 }
+
+if(place_meeting(x + _move_x,y + _move_y,obj_robot)){
+		health_ = health_-0.1;
+}
+
+if(health_ == 0){
+	instance_destroy();
+}
